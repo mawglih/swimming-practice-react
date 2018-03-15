@@ -1,5 +1,5 @@
-import { React, Component } from 'react';
-import { Link } from 'react-router-dom';
+import React, { Component } from 'react';
+import { NavLink } from 'react-router-dom';
 
 class Header extends Component {
     render() {
@@ -9,24 +9,24 @@ class Header extends Component {
                 <div className="header__nav">
                     <ul className="header__nav-ul">
                         <li className="header__nav-item">
-                            <Link to="/main" />Home
+                            <NavLink activeClassName="selected__link" to="/main">Home</NavLink>
                         </li>
                         <li className="header__nav-item">
-                            <Link to="/login" />Login
+                            <NavLink activeClassName="selected__link" to="/login">Login</NavLink>
                         </li>
                         <li className="header__nav-item">
-                            <Link to="/signup" />SignUp
+                            <NavLink activeClassName="selected__link" to="/signup">SignUp</NavLink>
                         </li>
                         <li className="header__nav-item">
-                            <Link to="/logout" />Logout
+                            <NavLink activeClassName="selected__link" to="/logout">Logout</NavLink>
                         </li>
                         <li className="header__nav-item">
-                            <Link to="/training" />Training
+                            <NavLink activeClassName="selected__link" to="/training">Training</NavLink>
                         </li>
                     </ul>
                 </div>
             </div>
-        )
+        );
     }
 
 }

@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import Main from './main';
 import Header from './header';
+import Login from './login';
+import Logout from './logout';
+import SignUp from './signup';
+import Training from './training';
 
 class App extends Component {
   render() {
@@ -26,7 +30,7 @@ class App extends Component {
               component={() => <SignUp />}
           />
           <Route
-              exact path={'/trainingn'}
+              exact path={'/training'}
               component={() => <Training />}
           />
           <Route
