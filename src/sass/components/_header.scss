@@ -1,0 +1,23 @@
+.header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    &__logo {
+        flex: 0 0 20%;
+    }
+    &__nav{
+        display: flex;
+        align-items: flex-end;
+        align-content: space-between;
+        &-item {
+            padding: 20px;
+            margin: 0 20px;
+            & a {
+                text-decoration: none;
+            }
+        }
+    }
+}
+.selected__link {
+    color: red;
+}
